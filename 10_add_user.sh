@@ -4,7 +4,7 @@ PUID=${PUID:-777}
 GUID=${GUID:-777}
 
 if [ ! "$(id -u baca)" -eq "$PUID" ]; then usermod -o -u "$PUID" baca ; fi
-if [ ! "$(id -g baca)" -eq "$GUID" ]; then groupmod -o -u "$GUID" baca ; fi
+if [ ! "$(id -g baca)" -eq "$GUID" ]; then groupmod -o -g "$GUID" baca ; fi
 
 echo "
 ----------------------------------------------------
