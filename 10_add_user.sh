@@ -15,10 +15,10 @@ echo "
 ----------------------------------------------------
 GID/UID
 ----------------------------------------------------
-User uid:    $(id -u abc)
-User gid:    $(id -g abc)
+User uid:    $(id -u baca)
+User gid:    $(id -g baca)
 ----------------------------------------------------
 "
-chown abc:abc /app
-chown abc:abc /config
-chown abc:abc /defaults
+chown baca:baca /app
+chown baca:baca /config
+chown baca:baca /defaults
